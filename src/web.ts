@@ -13,6 +13,12 @@ export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorP
     console.log('ECHO', options);
     return options;
   }
+
+  async openMap(location: { latitude: number, longitude: number}): Promise<void> {
+    // logic here
+    console.log(location);
+    return;
+  }
 }
 
 const CapacitorPusherBeamsAuth = new CapacitorPusherBeamsAuthWeb();

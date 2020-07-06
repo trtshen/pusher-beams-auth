@@ -1,5 +1,7 @@
 package com.trtshen.pusherbeamsauth;
 
+import android.util.Log;
+
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
@@ -16,5 +18,16 @@ public class CapacitorPusherBeamsAuth extends Plugin {
         JSObject ret = new JSObject();
         ret.put("value", value);
         call.success(ret);
+    }
+
+    @PluginMethod()
+    public void openMap(PluginCall call) {
+    	Double latitude = call.getDouble("latitude");
+    	Double longitude = call.getDouble("longitude");
+
+        JSObject ret = new JSObject();
+        ret.put("lat", latitude);
+        ret.put("long", longitude);
+        call.resolve(ret);
     }
 }
