@@ -28,6 +28,8 @@ public class CapacitorPusherBeamsAuth extends Plugin {
         JSObject ret = new JSObject();
         ret.put("lat", latitude);
         ret.put("long", longitude);
+
+        Log.v(ret);
         call.resolve(ret);
     }
 }

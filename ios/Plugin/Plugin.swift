@@ -18,7 +18,7 @@ public class CapacitorPusherBeamsAuth: CAPPlugin {
     @objc func openMap(_ call: CAPPluginCall) {
 		let latitude = call.getString("latitude")
 		let longitude = call.getNumber("longitude")
-
+		print(latitude)
 		// more logic
 	}
 }
