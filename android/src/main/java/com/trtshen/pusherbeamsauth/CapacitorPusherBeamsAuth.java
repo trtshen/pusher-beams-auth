@@ -30,6 +30,6 @@ public class CapacitorPusherBeamsAuth extends Plugin {
         ret.put("long", longitude);
 
         Log.v(ret);
-        call.resolve(ret);
+        call.success(ret);
     }
 }
