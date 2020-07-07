@@ -1,14 +1,16 @@
 {
   "name": "capacitor-pusher-beams-auth",
-  "version": "0.0.1-pre-alpha-1",
+  "version": "0.0.1-pre-alpha-2",
   "description": "Capacitor plugin for Pusher's Beams Auth",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "scripts": {
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && npm run transpile",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "rollup": "rollup --config rollup.config.js",
+    "transpile": "tsc --module ES2015 --target ES5 --outDir dist/esm"
   },
   "author": "trtshen chaw",
   "license": "MIT",
@@ -19,7 +21,9 @@
     "rimraf": "^3.0.0",
     "typescript": "^3.2.4",
     "@capacitor/ios": "latest",
-    "@capacitor/android": "latest"
+    "@capacitor/android": "latest",
+    "rollup": "^1.12.3",
+    "rollup-plugin-node-resolve": "^5.0.0"
   },
   "files": [
     "dist/",

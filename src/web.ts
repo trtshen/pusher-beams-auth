@@ -1,6 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
 import { CapacitorPusherBeamsAuthPlugin } from './definitions';
-import { version } from '../package.json';
 
 export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorPusherBeamsAuthPlugin {
   constructor() {
@@ -22,7 +21,7 @@ export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorP
   }
 
   async openWebVersion(options: {anything: any}): Promise<{value: any}> {
-    const anything = options.anything || `Capacitor Push Beams Auth: ${version}`;
+    const anything = options.anything || `Capacitor Push Beams Auth: TESTING`;
     return anything;
   }
 }
