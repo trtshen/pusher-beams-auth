@@ -64,6 +64,14 @@ var CapacitorPusherBeamsAuthWeb = /** @class */ (function (_super) {
             });
         });
     };
+    CapacitorPusherBeamsAuthWeb.prototype.onlyAndroid = function (options) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                console.log('ECHO::Android', options);
+                return [2 /*return*/, options];
+            });
+        });
+    };
     CapacitorPusherBeamsAuthWeb.prototype.openMap = function (location) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {

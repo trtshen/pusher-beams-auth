@@ -1,8 +1,13 @@
 import { WebPlugin } from '@capacitor/core';
-import { CapacitorPusherBeamsAuthPlugin } from './definitions';
-export declare class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorPusherBeamsAuthPlugin {
+import { CapacitorPusherBeamsAuthWebPlugin } from './definitions';
+export declare class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorPusherBeamsAuthWebPlugin {
     constructor();
     echo(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
+    onlyAndroid(options: {
         value: string;
     }): Promise<{
         value: string;

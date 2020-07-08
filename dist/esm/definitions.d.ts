@@ -1,9 +1,9 @@
 declare module "@capacitor/core" {
     interface PluginRegistry {
-        CapacitorPusherBeamsAuth: CapacitorPusherBeamsAuthPlugin;
+        CapacitorPusherBeamsAuth: CapacitorPusherBeamsAuthWebPlugin;
     }
 }
-export interface CapacitorPusherBeamsAuthPlugin {
+export interface CapacitorPusherBeamsAuthWebPlugin {
     echo(options: {
         value: string;
     }): Promise<{
@@ -13,4 +13,14 @@ export interface CapacitorPusherBeamsAuthPlugin {
         latitude: number;
         longitude: number;
     }): Promise<void>;
+    openWebVersion(options: {
+        anything: any;
+    }): Promise<{
+        value: any;
+    }>;
+    onlyAndroid(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
 }

@@ -1,7 +1,7 @@
 import { WebPlugin } from '@capacitor/core';
-import { CapacitorPusherBeamsAuthPlugin } from './definitions';
+import { CapacitorPusherBeamsAuthWebPlugin } from './definitions';
 
-export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorPusherBeamsAuthPlugin {
+export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorPusherBeamsAuthWebPlugin {
   constructor() {
     super({
       name: 'CapacitorPusherBeamsAuth',
@@ -14,6 +14,11 @@ export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorP
     return options;
   }
 
+  async onlyAndroid(options: { value: string }): Promise<{value: string}> {
+    console.log('ECHO::Android', options);
+    return options;
+  }
+
   async openMap(location: { latitude: number, longitude: number}): Promise<void> {
     // logic here
     console.log(location);
@@ -22,6 +27,11 @@ export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorP
 
   async openWebVersion(options: {anything: any}): Promise<{value: any}> {
     const anything = options.anything || `Capacitor Push Beams Auth: TESTING`;
+    return anything;
+  }
+  
+  async goToAppSetting(options: {value: any}): Promise<{value: any}> {
+    const anything = options.value  || `Capacitor Push Beams Auth: TESTING`;
     return anything;
   }
 }
