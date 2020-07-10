@@ -21,6 +21,11 @@ export declare class CapacitorPusherBeamsAuthWeb extends WebPlugin implements Ca
     }): Promise<{
         value: any;
     }>;
+    goToAppSetting(options: {
+        value: any;
+    }): Promise<{
+        value: any;
+    }>;
 }
 declare const CapacitorPusherBeamsAuth: CapacitorPusherBeamsAuthWeb;
 export { CapacitorPusherBeamsAuth };

@@ -90,6 +90,15 @@ var CapacitorPusherBeamsAuthWeb = /** @class */ (function (_super) {
             });
         });
     };
+    CapacitorPusherBeamsAuthWeb.prototype.goToAppSetting = function (options) {
+        return __awaiter(this, void 0, void 0, function () {
+            var anything;
+            return __generator(this, function (_a) {
+                anything = options.value || "Capacitor Push Beams Auth: TESTING";
+                return [2 /*return*/, anything];
+            });
+        });
+    };
     return CapacitorPusherBeamsAuthWeb;
 }(WebPlugin));
 export { CapacitorPusherBeamsAuthWeb };
