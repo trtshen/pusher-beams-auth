@@ -4,6 +4,7 @@
     <output url="file://$MODULE_DIR$/../../practera-app-v2/node_modules/capacitor-pusher-beams-auth/android/build/intermediates/javac/debug/classes" />
     <output-test url="file://$MODULE_DIR$/../../practera-app-v2/node_modules/capacitor-pusher-beams-auth/android/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
+    <content url="file://$MODULE_DIR$" />
     <content url="file://$MODULE_DIR$/../../practera-app-v2/node_modules/capacitor-pusher-beams-auth/android/build/generated/aidl_source_output_dir/debug/out">
       <sourceFolder url="file://$MODULE_DIR$/../../practera-app-v2/node_modules/capacitor-pusher-beams-auth/android/build/generated/aidl_source_output_dir/debug/out" isTestSource="false" generated="true" />
     </content>
@@ -163,7 +164,6 @@
     <content url="file://$MODULE_DIR$/../../practera-app-v2/node_modules/capacitor-pusher-beams-auth/android/src/testDebug/shaders">
       <sourceFolder url="file://$MODULE_DIR$/../../practera-app-v2/node_modules/capacitor-pusher-beams-auth/android/src/testDebug/shaders" isTestSource="true" />
     </content>
-    <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />

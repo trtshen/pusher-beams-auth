@@ -30,7 +30,7 @@ public class CapacitorPusherBeamsAuth extends Plugin {
     public void openWebVersion(PluginCall call) {
         String value = call.getString("anything");
 
-        Log.i("PusherBeams", "anything anything anything anything Beams");
+        Log.i("PusherBeams::fromAndroid", value);
 
         JSObject ret = new JSObject();
         ret.put("anything", value);

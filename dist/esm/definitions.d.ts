@@ -23,4 +23,9 @@ export interface CapacitorPusherBeamsAuthWebPlugin {
     }): Promise<{
         value: string;
     }>;
+    goToAppSetting(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
 }

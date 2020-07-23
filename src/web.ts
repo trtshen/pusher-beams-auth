@@ -27,6 +27,7 @@ export class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorP
 
   async openWebVersion(options: {anything: any}): Promise<{value: any}> {
     const anything = options.anything || `Capacitor Push Beams Auth: TESTING`;
+    console.log('LOG>CapacitorPusherBeamsAuthWeb::', anything);
     return anything;
   }
   
