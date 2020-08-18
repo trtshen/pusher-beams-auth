@@ -2,24 +2,39 @@ import { WebPlugin } from '@capacitor/core';
 import { CapacitorPusherBeamsAuthWebPlugin } from './definitions';
 export declare class CapacitorPusherBeamsAuthWeb extends WebPlugin implements CapacitorPusherBeamsAuthWebPlugin {
     constructor();
-    echo(options: {
-        value: string;
+    addDeviceInterest(options: {
+        interest: string;
     }): Promise<{
-        value: string;
+        message: string;
     }>;
-    onlyAndroid(options: {
-        value: string;
+    removeDeviceInterest(options: {
+        interest: string;
     }): Promise<{
-        value: string;
+        success: boolean;
     }>;
-    openMap(location: {
-        latitude: number;
-        longitude: number;
-    }): Promise<void>;
-    openWebVersion(options: {
-        anything: any;
+    setUserID(options: {
+        beamsAuthURL: string;
+        userID: string;
+        headers: JSON;
+    }): Promise<string | {
+        message: string;
+    }>;
+    getDeviceInterests(options: {
+        interests: string[];
     }): Promise<{
-        value: any;
+        interests: string[];
+    }>;
+    setDeviceInterests(): Promise<{
+        success: boolean;
+    }>;
+    clearDeviceInterests(): Promise<{
+        success: boolean;
+    }>;
+    clearAllState(): Promise<{
+        success: boolean;
+    }>;
+    stop(): Promise<{
+        success: boolean;
     }>;
     goToAppSetting(options: {
         value: any;

@@ -56,37 +56,50 @@ var CapacitorPusherBeamsAuthWeb = /** @class */ (function (_super) {
             platforms: ['web']
         }) || this;
     }
-    CapacitorPusherBeamsAuthWeb.prototype.echo = function (options) {
+    CapacitorPusherBeamsAuthWeb.prototype.addDeviceInterest = function (options) {
+        console.log(options);
+        throw new Error("Method not implemented.");
+    };
+    CapacitorPusherBeamsAuthWeb.prototype.removeDeviceInterest = function (options) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                console.log('ECHO', options);
-                return [2 /*return*/, options];
+                console.log('removeDeviceInterest::', options);
+                return [2 /*return*/, { success: true }];
             });
         });
     };
-    CapacitorPusherBeamsAuthWeb.prototype.onlyAndroid = function (options) {
+    CapacitorPusherBeamsAuthWeb.prototype.setUserID = function (options) {
+        console.log(options);
+        throw new Error("setUserID :: Method not implemented.");
+    };
+    CapacitorPusherBeamsAuthWeb.prototype.getDeviceInterests = function (options) {
+        console.log(options);
+        throw new Error("getDeviceInterests :: Method not implemented.");
+    };
+    CapacitorPusherBeamsAuthWeb.prototype.setDeviceInterests = function () {
+        throw new Error("setDeviceInterests :: Method not implemented.");
+    };
+    CapacitorPusherBeamsAuthWeb.prototype.clearDeviceInterests = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                console.log('ECHO::Android', options);
-                return [2 /*return*/, options];
+                console.log('CapacitorPusherBeamsAuthWeb :: clearDeviceInterests');
+                return [2 /*return*/, { success: true }];
             });
         });
     };
-    CapacitorPusherBeamsAuthWeb.prototype.openMap = function (location) {
+    CapacitorPusherBeamsAuthWeb.prototype.clearAllState = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                // logic here
-                console.log(location);
-                return [2 /*return*/];
+                console.log('CapacitorPusherBeamsAuthWeb :: clearAllState');
+                return [2 /*return*/, { success: true }];
             });
         });
     };
-    CapacitorPusherBeamsAuthWeb.prototype.openWebVersion = function (options) {
+    CapacitorPusherBeamsAuthWeb.prototype.stop = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var anything;
             return __generator(this, function (_a) {
-                anything = options.anything || "Capacitor Push Beams Auth: TESTING";
-                return [2 /*return*/, anything];
+                console.log('CapacitorPusherBeamsAuthWeb :: stop');
+                return [2 /*return*/, { success: true }];
             });
         });
     };
@@ -94,7 +107,7 @@ var CapacitorPusherBeamsAuthWeb = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             var anything;
             return __generator(this, function (_a) {
-                anything = options.value || "Capacitor Push Beams Auth: TESTING";
+                anything = options.value || "Capacitor Push Beams Auth :: TESTING";
                 return [2 /*return*/, anything];
             });
         });
