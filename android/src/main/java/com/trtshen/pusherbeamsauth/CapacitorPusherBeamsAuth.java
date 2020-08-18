@@ -143,4 +143,8 @@ public class CapacitorPusherBeamsAuth extends Plugin {
         startActivityForResult(call, intent, 1);
         call.success();
     }
+    
+    private String getPackageName() {
+        return "com.package.test-name";
+    }
 }
