@@ -22,7 +22,7 @@
     "typescript": "^3.2.4",
     "@capacitor/ios": "latest",
     "@capacitor/android": "latest",
-    "rollup": "^1.12.3",
+    "rollup": "^2.80.0",
     "rollup-plugin-node-resolve": "^5.0.0"
   },
   "files": [
